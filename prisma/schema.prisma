@@ -21,3 +21,8 @@ model User {
   
   @@map("users")
 }
+
+model Client {
+  id             String   @id @default(uuid())
+  name           String
+}
